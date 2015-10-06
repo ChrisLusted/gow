@@ -24,7 +24,7 @@ mkdir -p "$HOME/.pow"
 # save PATH so we can reuse it later
 echo "$PATH" > "$HOME/.pow/.path"
 
-go install github.com/jonasschneider/gow
+go get github.com/jonasschneider/gow
 
 sudo tee /Library/LaunchDaemons/com.jonasschneider.gow.firewall.plist > /dev/null <<END
 <?xml version="1.0" encoding="UTF-8"?>
